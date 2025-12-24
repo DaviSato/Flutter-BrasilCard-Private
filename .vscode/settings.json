@@ -1,0 +1,17 @@
+{
+  "editor.wordWrapColumn": 80,
+  "diffEditor.wordWrap": "inherit",
+  "editor.wordWrap": "off",
+  "notebook.output.wordWrap": false,
+  "files.exclude": {
+    "**/build": true,
+    "**/.dart_tool": true,
+    "**/node_modules": true
+  },
+  "search.exclude": {
+    "**/build": true,
+    "**/.dart_tool": true,
+    "**/node_modules": true
+  },
+  "dart.analysisExcludedFolders": ["build", ".dart_tool"]
+}

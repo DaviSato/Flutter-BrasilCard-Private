@@ -1,0 +1,40 @@
+name: brasil_crypto
+description: 'Desafio Flutter- BrasilCard Private'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.5.4
+
+  http: ^1.6.0
+  get_it: ^9.2.0
+  bloc: ^9.1.0
+  flutter_bloc: ^9.1.0
+  fl_chart: ^1.1.1
+  url_launcher: ^6.3.2
+  flutter_launcher_icons: ^0.14.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: 'assets/icon/app_icon.png'
+
+  # Android 12+ adaptive icon (IMPORTANT)
+  adaptive_icon_background: '#FFFFFF'
+  adaptive_icon_foreground: 'assets/icon/app_icon.png'

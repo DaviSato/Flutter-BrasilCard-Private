@@ -467,7 +467,7 @@ class _CryptoDetailsDialogState extends State<CryptoDetailsDialog> {
             Text('Informações Adicionais', style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold)),
             const SizedBox(height: 16),
             if (details.genesisDate != null)
-              _buildInfoRow(label: 'Data de Gênese', value: details.genesisDate!, theme: theme),
+              _buildInfoRow(label: 'Data de Gênese', value: formatDateBr(details.genesisDate!), theme: theme),
             if (details.websiteUrl != null)
               Padding(
                 padding: const EdgeInsets.only(top: 12),
@@ -570,5 +570,12 @@ class _CryptoDetailsDialogState extends State<CryptoDetailsDialog> {
     } else {
       return number.toStringAsFixed(2);
     }
+  }
+
+  String formatDateBr(String isoDate) {
+    final date = DateTime.parse(isoDate);
+    return '${date.day.toString().padLeft(2, '0')}/'
+        '${date.month.toString().padLeft(2, '0')}/'
+        '${date.year}';
   }
 }
